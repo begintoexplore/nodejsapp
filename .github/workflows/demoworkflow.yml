@@ -1,8 +1,10 @@
 name: github action demo
 on : push
 jobs :
-   first/job :
+   firstjob :
       name : exploring first job
       runs-on : ubuntu-latest
       steps :
-         runs : echo "this job is running on ${{runner.os}"
+           - run : echo "this job is running on ${{runner.os}}"
+   
+         
